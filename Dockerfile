@@ -2,13 +2,7 @@
 # This is provided for illustration purposes only, for full details 
 # please consult the product documentation: https://docs.appdynamics.com/
 
-FROM ubuntu:14.04
-
-# Install required packages
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y unzip && \
-    apt-get clean
+FROM anapsix/alpine-java:8
 
 # Install AppDynamics Machine Agent
 ENV MACHINE_AGENT_HOME /opt/appdynamics/machine-agent/
