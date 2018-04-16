@@ -10,7 +10,7 @@ To build and run the project:
 1. Clone this repo and `cd docker-machine-agent`
 1. Edit the docker-compose.yml file and replace the text in italic with the host, port, account name, access key and SSL connection details for your Controller.  Please see the [product documentation](https://docs.appdynamics.com/display/PRO43/Standalone+Machine+Agent+Configuration+Property+Reference) for details of how to configure these properties, which allow the Machine Agent to connect to your Controller instance.
 1. Download the Machine Agent ZIP bundle with JRE (64-bit Linux) from the [AppDynamics Download Site](https://download.appdynamics.com), copy it to your project directory and rename to *machine-agent.zip*
-1. Run `docker-compose up`
+1. Run `docker-compose up -d`
 
 The first time you run this command, you will see a lot of console output as the Docker image is built, followed by output similar to this:
 
